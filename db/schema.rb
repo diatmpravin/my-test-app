@@ -11,6 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20130609090210) do
+
+  create_table "addresses", force: true do |t|
+    t.integer  "user_id"
+    t.string   "extra"
+    t.string   "city"
+    t.string   "country"
+    t.string   "postcode"
+    t.string   "state"
+    t.string   "street"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "email"
+    t.string   "fname"
+    t.string   "lname"
+    t.integer  "phone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

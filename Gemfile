@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails',     path: '/home/ubuntu/workspace/Fork/rails'
+# gem 'rails',     path: '/home/ubuntu/workspace/Fork/rails'
+gem 'rails', :github => 'rails/rails', :branch => 'any_of'
+
 gem 'arel',      github: 'rails/arel'
 
 # Use sqlite3 as the database for Active Record
@@ -46,3 +48,4 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'hirb'
